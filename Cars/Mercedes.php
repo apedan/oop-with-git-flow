@@ -10,8 +10,12 @@
 namespace Cars;
 
 use Cars\Car;
+use Cars\CarTypes;
+use Cars\CarTypeBus;
 
-class Lada extends Car{
+class Mercedes extends Car {
+
+    public $is_trailer;
 
     function __construct($name, $number, $color, $age, $type)
     {
@@ -19,7 +23,7 @@ class Lada extends Car{
         $this->number = $number;
         $this->color = $color;
         $this->age = $age;
-        $this->type = $type;
+        $this->type = new CarTypeBus();
     }
 
     public function setName($name)
@@ -42,9 +46,25 @@ class Lada extends Car{
         $this->color = $color;
     }
 
-    public function setType($type)
+    public function setType(CarTypes $type)
     {
         $this->type = $type;
+    }
+
+    /**
+     * @param Boolean $is_trailer
+     */
+    public function setIsTrailer($is_trailer)
+    {
+        $this->is_trailer = $is_trailer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsTrailer()
+    {
+        return $this->is_trailer;
     }
 
 }

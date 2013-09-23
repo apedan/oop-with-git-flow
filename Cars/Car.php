@@ -10,22 +10,12 @@
 namespace Cars;
 
 
-abstract class Car {
+abstract class Car implements CarInterface{
     public $name;
     public $number;
     public $color;
     public $age;
     public $type;
-
-    abstract public function setName($name);
-
-    abstract public function setColor($color);
-
-    abstract public function setAge($age);
-
-    abstract public function setType($type);
-
-    abstract public function setNumber($number);
 
     public function getAge()
     {
