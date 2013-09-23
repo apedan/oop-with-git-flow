@@ -13,6 +13,11 @@ use Cars\Car;
 use Cars\CarTypes;
 use Cars\CarTypePassenger;
 
+/**
+ * Автомобиль BMW
+ * Class Bmw
+ * @package Cars
+ */
 class Bmw extends Car {
 
     public $count_doors;

@@ -9,7 +9,11 @@
 
 namespace Cars;
 
-
+/**
+ * Абстрактный метод Типы Автомобилей
+ * Class CarTypes
+ * @package Cars
+ */
 abstract class CarTypes {
 
     const CAR_TRUCK = "Грузовой автомобиль";

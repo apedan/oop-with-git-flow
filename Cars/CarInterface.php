@@ -11,6 +11,11 @@ namespace Cars;
 
 use Cars\CarTypes;
 
+/**
+ * Интерфейс для автомобилей (для этого тестового задания не логичный, нет времени придумывать логику)
+ * Class CarInterface
+ * @package Cars
+ */
 interface CarInterface {
     public function setName($name);
 

@@ -13,6 +13,11 @@ use Cars\Car;
 use Cars\CarTypes;
 use Cars\CarTypeTruck;
 
+/**
+ * Автомобил ЗИЛ
+ * Class Zil
+ * @package Cars
+ */
 class Zil extends Car {
 
     public $is_tipper;
