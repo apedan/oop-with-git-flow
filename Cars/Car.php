@@ -9,7 +9,11 @@
 
 namespace Cars;
 
-
+/**
+ * Абстрактный класс Автомобили
+ * Class Car
+ * @package Cars
+ */
 abstract class Car implements CarInterface{
     public $name;
     public $number;
