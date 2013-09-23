@@ -13,6 +13,11 @@ use Cars\Car;
 use Cars\CarTypes;
 use Cars\CarTypeBus;
 
+/**
+ * Автомобиль Мерседес
+ * Class Mercedes
+ * @package Cars
+ */
 class Mercedes extends Car {
 
     public $is_trailer;
