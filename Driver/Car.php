@@ -2,33 +2,30 @@
 /**
  * Created by JetBrains PhpStorm.
  * User: apedan
- * Date: 9/23/13
- * Time: 2:26 PM
+ * Date: 9/24/13
+ * Time: 6:39 PM
  * To change this template use File | Settings | File Templates.
  */
 
-namespace Cars;
+namespace Driver;
 
-use Cars\Car;
+use Cars\Car as Cars;
 use Cars\CarTypes;
-use Cars\CarTypeTruck;
 
 /**
- * Автомобил ЗИЛ
- * Class Zil
- * @package Cars
+ * Автомобиль водителя
+ * Class Car
+ * @package Driver
  */
-class Zil extends Car {
+class Car extends Cars{
 
-    public $is_tipper;
-
-    function __construct($name, $number, $color, $age)
+    function __construct($name, $number, $color, $age, $type)
     {
         $this->name = $name;
         $this->number = $number;
         $this->color = $color;
         $this->age = $age;
-        $this->type = new CarTypeTruck();
+        $this->type = $type;
     }
 
     public function setName($name)
@@ -55,21 +52,4 @@ class Zil extends Car {
     {
         $this->type = $type;
     }
-
-    /**
-     * @param Boolean $is_tipper
-     */
-    public function setIsTipper($is_tipper)
-    {
-        $this->is_tipper = $is_tipper;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIsTipper()
-    {
-        return $this->is_tipper;
-    }
-
 }
