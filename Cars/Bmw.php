@@ -22,7 +22,7 @@ class Bmw extends Car {
 
     public $count_doors;
 
-    function __construct($name, $number, $color, $age, $type)
+    function __construct($name, $number, $color, $age)
     {
         $this->name = $name;
         $this->number = $number;
