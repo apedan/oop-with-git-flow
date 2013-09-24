@@ -22,7 +22,7 @@ class Zil extends Car {
 
     public $is_tipper;
 
-    function __construct($name, $number, $color, $age, $type)
+    function __construct($name, $number, $color, $age)
     {
         $this->name = $name;
         $this->number = $number;
